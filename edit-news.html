@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<!--                                         
+                 _   _                                   
+ ___ ___ ___ ___| |_| |_ _ _ ___ ___ ___   ___ ___ _____ 
+|   | . | . |  _| '_|   | | | . |   | . |_|  _| . |     |
+|_|_|_  |___|___|_,_|_|_|___|___|_|_|_  |_|___|___|_|_|_|
+    |___|                           |___|                
+Dự án Java web tin tức với JSP/Servlet tại blog Ngọc Khương IT
+-->
+  <title>ngockhuong.com - Chia sẻ kiến thức Java</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/arial.js"></script>
+  <script type="text/javascript" src="js/cuf_run.js"></script>
+  <script src="ckeditor.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header_resize">
+        <div class="logo">
+          <h1><a href="index.html"><span>ngockhuong</span>.com<br />
+          <small>Chia sẻ miễn phí kiến thức lập trình</small></a></h1>
+        </div>
+        <div class="clr"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html"><span>Trang chủ</span></a></li>
+            <li><a href="cpanel.html" class="active"><span>Cpanel</span></a></li>
+            <li><a href=""><span>Đăng xuất</span></a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="body_resize">
+        <div class="left">
+          <div class="item">
+            <h2>Sửa tin</h2>
+            <form action="" method="post" enctype="multipart/form-data" id="contactform">
+              <ol>
+                <li>
+                  <label>Tên tin*</label>
+                  <input type="text" value="Hướng dẫn thiết kế database - Dự án JSP/Servlet" name="name" required class="text" />
+                </li>
+                <li>
+                  <label>Danh mục*</label>
+                  <select name="category">
+                    <option value="1" >Tin tức Java</option>
+                    <option value="2" >Tin tức PHP</option>
+                    <option value="3" >Tin tức Android</option>
+                    <option value="4" >Tin công nghệ</option>
+                  </select>
+                </li>
+                <li>
+                  <label>Mô tả*</label>
+                  <textarea name="description" id="mota" required rows="6" cols="50">Sau khi chuẩn bị vững vàng mọi kiến thức để bắt đầu một project thì công việc tiếp theo khá quan trọng đó là
+              phân tích và thiết kế database. Trong bài này, tiếp tục dự án Java web tin tức với JSP Servlet, chúng ta sẽ
+              đi vào tìm hiểu cách phân tích, thiết kế một database trong dự án thực tế sẽ như thế nào (xem thử có ăn được
+              không 😀 )</textarea>
+              <script>
+                CKEDITOR.replace('mota',{
+                    uiColor: '#79C04A',
+                });
+                CKEDITOR.config.toolbarGroups = [
+                    { name: 'document',    groups: [ 'mode', 'document' ] },
+                    { name: 'my_group',   groups: [ 'clipboard', 'undo' ] },"/",
+                    { name: 'styles' },
+                    { name: 'colors'},
+                    { name: 'paragraph'},
+                    { name: 'insert'},
+                    { name: 'links' }
+                ];
+            </script>
+                </li>
+                <li>
+                  <label>Chi tiết*</label>
+                  <textarea name="detail" id="chitiet" required rows="10" cols="50">Sau khi chuẩn bị vững vàng mọi kiến thức để bắt đầu một project thì công việc tiếp theo khá quan trọng đó là
+              phân tích và thiết kế database. Trong bài này, tiếp tục dự án Java web tin tức với JSP Servlet, chúng ta sẽ
+              đi vào tìm hiểu cách phân tích, thiết kế một database trong dự án thực tế sẽ như thế nào (xem thử có ăn được
+              không 😀 ).
+            Mà muốn phân tích được, trước tiên bạn phải xác định được dự án của chúng ta cần gì, lưu trữ cái gì vàng bạc
+              hay là kim cương, bao gồm những chức năng ra sao. Quên rồi thì có thể xem lại bài trước Dự án Java web tin
+              tức với JSP Servlet – Bài 1: Phân tích và giới thiệu yêu cầu dự án bạn nhé.</textarea>
+              <script>
+                CKEDITOR.replace('chitiet',{
+                    uiColor: '#79C04A',
+                });
+                CKEDITOR.config.toolbarGroups = [
+                    { name: 'document',    groups: [ 'mode', 'document' ] },
+                    { name: 'my_group',   groups: [ 'clipboard', 'undo' ] },"/",
+                    { name: 'styles' },
+                    { name: 'colors'},
+                    { name: 'paragraph'},
+                    { name: 'insert'},
+                    { name: 'links' }
+                ];
+            </script>
+                </li>
+                <li>
+                  <label>Hình ảnh*</label>
+                  <input type="file" name="image" />
+                </li>
+                <li class="buttons">
+                  <input type="submit" name="submit" value="Sửa tin" class="send" />
+                  <div class="clr"></div>
+                </li>
+              </ol>
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <h2>Danh mục</h2>
+          <ul>
+            <li>
+              <a href="cat.html">Tin tức Java</a> (
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="edit-cat.html">Sửa</a>              |
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="">Xóa</a>)
+            </li>
+            <li>
+              <a href="cat.html">Tin tức PHP</a> (
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="edit-cat.html">Sửa</a>              |
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="">Xóa</a>)
+            </li>
+            <li>
+              <a href="cat.html">Tin tức Android</a> (
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="edit-cat.html">Sửa</a>              |
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="">Xóa</a>)
+            </li>
+            <li>
+              <a href="cat.html">Tin công nghệ</a> (
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="edit-cat.html">Sửa</a>              |
+              <a style="background: none; font-weight: normal; color: red; padding: 0px; font-size: 13px" href="">Xóa</a>)
+            </li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_resize">
+        <p class="lf">&copy; Copyright <a href="http://ngockhuong.com">ngockhuong.com</a></p>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+</html>
