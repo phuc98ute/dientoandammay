@@ -115,12 +115,6 @@ public class UserInfoController {
 			throws ClassNotFoundException, SQLException {
 		ModelAndView mav = new ModelAndView();
 		System.out.print("id cua nguoi nay la" + id);
-		/*
-		 * PreparedStatement pr; java.sql.Connection
-		 * conn=ConnectionUtils.getMyConnection(); pr=(PreparedStatement)
-		 * conn.prepareStatement("DELETE FROM articles WHERE article_id="+id);
-		 * pr.executeUpdate(); pr.close();
-		 */
 		userInfoService.Delete(userInfoService.FindOne(Integer.parseInt(id)));
 		mav.setViewName("redirect:/app/secure/article-details");
 

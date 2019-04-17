@@ -31,15 +31,15 @@
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             
-            <input name="app_username" type="text" class="form-control" placeholder="Username"
+            <input name="app_username" type="text" class="form-control" placeholder="Tên đăng nhập"
                    autofocus="true"/>
-            <input name="app_password" type="password" class="form-control" placeholder="Password"/>
+            <input name="app_password" type="password" class="form-control" placeholder="Mật khẩu"/>
             <span> <p th:if="${param.error}" class="error">
-            Bad Credentials  </span>
+            Đăng nhập lỗi!  </span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button class="btn btn-lg btn-primary btn-block" value="Login" type="submit">login</button>
-            <h4 class="text-center"><a href="registration.jsp">Create an account</a></h4>
+            <button class="btn btn-lg btn-primary btn-block" value="Login" type="submit">Đăng nhập</button>
+            <h4 class="text-center"><a href="registration.jsp">Tạo tài khoản mới?</a></h4>
         </div>
 
     </form>

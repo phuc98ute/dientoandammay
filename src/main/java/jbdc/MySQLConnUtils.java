@@ -9,11 +9,11 @@ public class MySQLConnUtils {
  // Kết nối vào MySQL.
  public static Connection getMySQLConnection() throws SQLException,
          ClassNotFoundException {
-     String hostName = "104.199.216.35";
- 
-     String dbName = "csdl_dtdmnhom11";
-     String userName = "root";
-     String password = "";
+	 
+     String hostName = "35.200.196.202";    
+     String dbName = "news";
+     String userName = "hung";
+     String password = "123";
  
      return getMySQLConnection(hostName, dbName, userName, password);
  }
