@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+  <title>ItSpkt.com - Chia sẻ kiến thức Java</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+   <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"
+    rel="stylesheet" />
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" 
+    th:src="@{/webjars/jquery/1.12.4/jquery.min.js}"></script>
+
+<script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script>
+  <script type="text/javascript" src="js/cufon-yui.js"></script>
+  <script type="text/javascript" src="js/arial.js"></script>
+  <script type="text/javascript" src="js/cuf_run.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header_resize">
+        <div class="logo">
+          <h1><a href="index"><span>ItSpkt</span>.com<br />
+          <small>Chia sẻ miễn phí kiến thức lập trình</small></a></h1>
+        </div>
+        <div class="clr"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="app/index" class="active"><span>Trang chủ</span></a></li>
+            <li><a href="app/login"><span>Đăng nhập</span></a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="body_resize">
+            <div class="ARTICLE" th:object="${article}">
+            <h2 th:text="${article.title}"></h2>
+            <div class="clr"></div>
+            <p th:utext="${article.conttent}"></p>
+          </div>
+        <div class="clr">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_resize">
+        <p class="lf">&copy; Copyright <a href="ItSpkt.com">ItSpkt.com</a></p>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+</html>
